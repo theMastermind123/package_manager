@@ -1,6 +1,6 @@
 # TCP Socket Learning
 
-A simple TCP client and server written in C for learning Linux socket programming.
+Simple C TCP client/server for learning Linux socket programming.
 
 ## Build
 
@@ -11,29 +11,15 @@ gcc client.c -o client
 
 ## Run
 
-Start the server:
-
 ```bash
 ./server
-```
-
-Then, in another terminal:
-
-```bash
 ./client
 ```
 
-The server listens on port `2000`.
+Server listens on port `2000`.
 
-## Concepts
+## Future Improvements
 
-* IPv4 sockets
-* TCP
-* `socket()`
-* `bind()`
-* `listen()`
-* `accept()`
-* `connect()`
-* `send()` / `recv()`
-* Host vs network byte order
-* Client/server communication
+* Multithreading with `pthread`
+* Multiprocessing with `fork()`
+* Support multiple clients
